@@ -148,14 +148,17 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Sınıflar\Admin.cs" />
     <Compile Include="Models\Sınıflar\Cariler.cs" />
+    <Compile Include="Models\Sınıflar\Class1.cs" />
     <Compile Include="Models\Sınıflar\Context.cs" />
     <Compile Include="Models\Sınıflar\Departman.cs" />
+    <Compile Include="Models\Sınıflar\Detay.cs" />
     <Compile Include="Models\Sınıflar\FaturaKalem.cs" />
     <Compile Include="Models\Sınıflar\Faturalar.cs" />
     <Compile Include="Models\Sınıflar\Gider.cs" />
     <Compile Include="Models\Sınıflar\Kategori.cs" />
     <Compile Include="Models\Sınıflar\Personel.cs" />
     <Compile Include="Models\Sınıflar\SatisHareket.cs" />
+    <Compile Include="Models\Sınıflar\SınıfGrup.cs" />
     <Compile Include="Models\Sınıflar\Urun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -2852,10 +2855,11 @@
     <Content Include="Views\Fatura\YeniKalem.cshtml" />
     <Content Include="Views\Istatistik\Index.cshtml" />
     <Content Include="Views\Galeri\Index.cshtml" />
+    <Content Include="Views\UrunDetay\Index.cshtml" />
+    <Content Include="Views\Istatistik\BasitTablolar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\UrunDetay\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

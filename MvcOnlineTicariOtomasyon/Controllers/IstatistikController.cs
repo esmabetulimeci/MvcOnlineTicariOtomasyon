@@ -64,5 +64,17 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             ViewBag.d16 = degerler16;
             return View();
         }
+
+        public ActionResult BasitTablolar()
+        {
+            var sorgu = from x in c.Carilers
+                        group x by x.CariSehir into g
+                        select new SınıfGrup
+                        {
+                            Sehir = g.Key,
+                            Sayi = g.Count()
+                        };
+            return View(sorgu.ToList());
+        }
     }
 }
