@@ -13,22 +13,22 @@
     <li class="breadcrumb-item active">Departman Adi:@ViewBag.d</li>
     </ol>
 
-<table class="table table-hover">
+<table class="table table-bordered">
     <tr>
-        <th>Personel ID</th>
+    
         <th>Ad</th>
         <th>Soyad</th>
-        <th>Görsel</th>
+ 
         <th>Satışlar</th>
 
     </tr>
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.PersonelID</td>
+        
             <td>@item.PersonelAd</td>
             <td>@item.PersonelSoyad</td>
-            <td>@item.PersonelGorsel</td>
+         
             <td><a href="/Departman/DepartmanPersonelSatis/@item.PersonelID" class="btn btn-default" style="background-color:orangered">Satışlar</a></td>
         
         </tr>

@@ -5,38 +5,47 @@
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
+<br />
 <h2>Urunler</h2>
+<br />
+@using (Html.BeginForm("Index", "Urun", FormMethod.Get))
+{
+    <p>
+        Ürün Adı :@Html.TextBox("p")
+        <input type="submit" value="Ara" />
+    </p>
+}
 
 <br />
-<table class="table table-bordered">
+<table class="table table-bordered" style="margin-top:20px; margin-left:20px;">
     <tr>
-        <th>ID</th>
+
         <th>Ürün</th>
         <th>Marka</th>
         <th>Stok</th>
         <th>Alış Fiyat</th>
         <th>Satış Fİyat</th>
         <th>Kategori</th>
-        <th>Görsel</th>
+
         <th>Sil</th>
         <th>Güncelle</th>
     </tr>
 
-    @foreach(var urun in Model)
-            {
-                <tr>
-                    <td>@urun.UrunID</td>
-                    <td>@urun.UrunAd</td>
-                    <td>@urun.Marka</td>
-                    <td>@urun.Stok</td>
-                    <td>@urun.AlisFiyati</td>
-                    <td>@urun.SatisFiyati</td>
-                    <td>@urun.Kategori.KategoriAd</td>
-                    <td>@urun.UrunGorsel</td>
-                    <td><a href="/Urun/UrunSil/@urun.UrunID" class="btn btn-danger">Sil</a></td>
-                    <td><a href="/Urun/UrunGetir/@urun.UrunID" class="btn btn-success">Güncelle</a></td>
-         </tr>
-            }
+    @foreach (var urun in Model)
+    {
+        <tr>
+
+            <td>@urun.UrunAd</td>
+            <td>@urun.Marka</td>
+            <td>@urun.Stok</td>
+            <td>@urun.AlisFiyati ₺</td>
+            <td>@urun.SatisFiyati ₺</td>
+            <td>@urun.Kategori.KategoriAd</td>
+
+            <td><a href="/Urun/UrunSil/@urun.UrunID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Urun/UrunGetir/@urun.UrunID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
 </table>
 
 <a href="/Urun/UrunEkle/" class="btn btn-info">Yeni Ürün Ekle</a>

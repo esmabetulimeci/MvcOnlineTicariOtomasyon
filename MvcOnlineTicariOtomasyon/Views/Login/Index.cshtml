@@ -107,10 +107,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="fa fa-lock"></span>
                     <div class="clear"></div>
                     <div class="login-agileits-top">
-                        @using (Html.BeginForm("CariLogin", "LoginController", FormMethod.Post))
+                        @using(Html.BeginForm("CariLogin", "Login", FormMethod.Post))
                         {
                         <input type="text" class="name" name="CariMail" Placeholder="Mail Adresiniz" required="" />
-                        <input type="password" class="password" name="Sifre" Placeholder="Şifreniz" required="" />
+                        <input type="password" class="password" name="CariSifre" Placeholder="Şifreniz" required="" />
                         <input type="submit" value="Giriş Yap">
                         }
                     </div>
@@ -133,12 +133,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  
                     <div class="clear"></div>
                     <div class="login-agileits-top">
-                        <form action="#" method="post">
-                            <input type="text" class="name" name="KullaniciAd" Placeholder="Kullanıcı Adi" required="" />
+                        @using (Html.BeginForm("AdminLogin", "Login", FormMethod.Post))
+                        {
+                            <input type="text" class="name" name="KullaniciAdi" Placeholder="Kullanıcı Adi" required="" />
                             <input type="password" class="passsword" name="Sifre" Placeholder="Şifre" required="" />
                             <input type="submit" value="Giriş Yap">
-                        </form>
-                    </div>
+                        }
+                        </div>
                 </div>
             </div>
 
