@@ -13,17 +13,17 @@ namespace MvcOnlineTicariOtomasyon.Models.Sınıflar
         [Key]
         public int PersonelID { get; set; }
 
-
+        [Display(Name ="Personel Adi")]
         [Column(TypeName = "varchar")]
         [StringLength(30)]
         public string PersonelAd { get; set; }
 
-
+        [Display(Name = "Personel Soyad")]
         [Column(TypeName = "varchar")]
         [StringLength(30)]
         public string PersonelSoyad { get; set; }
 
-
+        [Display(Name = "Görsel")]
         [Column(TypeName = "varchar")]
         [StringLength(250)]
         public string PersonelGorsel { get; set; }
