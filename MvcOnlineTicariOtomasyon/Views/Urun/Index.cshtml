@@ -29,6 +29,8 @@
 
         <th>Sil</th>
         <th>Güncelle</th>
+        <th>Satış Yap</th>
+
     </tr>
 
     @foreach (var urun in Model)
@@ -44,6 +46,7 @@
 
             <td><a href="/Urun/UrunSil/@urun.UrunID" class="btn btn-danger">Sil</a></td>
             <td><a href="/Urun/UrunGetir/@urun.UrunID" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Urun/SatisYap/@urun.UrunID" class="btn btn-warning">Satış Yap</a></td>
         </tr>
     }
 </table>
