@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
+using MvcOnlineTicariOtomasyon.Models;
 using MvcOnlineTicariOtomasyon.Models.Sınıflar;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
@@ -42,5 +43,75 @@ namespace MvcOnlineTicariOtomasyon.Controllers
 
 
         }
+
+        public ActionResult Index4()
+        {
+            return View();
+        }
+
+
+        public ActionResult VisualizeUrunResult()
+        {
+            return Json(UrunListesi(), JsonRequestBehavior.AllowGet);
+        }
+
+        public List<Sinif1> UrunListesi()
+        {
+            List<Sinif1> snf = new List<Sinif1> ();
+            snf.Add(new Sinif1()
+            {
+                UrunAd ="Avize",
+                Stok = 100
+            });
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Koltuk",
+                Stok = 100
+            });
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Hali",
+                Stok = 47
+            });
+
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Masa",
+                Stok = 100
+            });
+
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Ayna",
+                Stok = 57
+            });
+
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Aksesuar",
+                Stok = 50
+            });
+
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Dolap",
+                Stok = 80
+            });
+
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Yatak",
+                Stok = 120
+            });
+
+            snf.Add(new Sinif1()
+            {
+                UrunAd = "Sandakye",
+                Stok = 50
+            });
+            return snf;
+        }
+        
+         
     }
 }

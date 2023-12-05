@@ -175,6 +175,7 @@
     <Compile Include="Models\Sınıflar\Kategori.cs" />
     <Compile Include="Models\Sınıflar\Personel.cs" />
     <Compile Include="Models\Sınıflar\SatisHareket.cs" />
+    <Compile Include="Models\Sınıflar\Sinif1.cs" />
     <Compile Include="Models\Sınıflar\SınıfGrup.cs" />
     <Compile Include="Models\Sınıflar\SınıfGrup2.cs" />
     <Compile Include="Models\Sınıflar\SınıfGrup3.cs" />
@@ -2948,6 +2949,7 @@
     <Content Include="Views\Grafik\Index.cshtml" />
     <Content Include="Views\Grafik\Index2.cshtml" />
     <Content Include="Views\Grafik\Index3.cshtml" />
+    <Content Include="Views\Grafik\Index4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
