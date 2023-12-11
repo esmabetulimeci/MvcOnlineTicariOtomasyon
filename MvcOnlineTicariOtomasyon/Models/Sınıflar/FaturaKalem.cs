@@ -26,7 +26,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Sınıflar
 
         public int Faturaid { get; set; }
 
-        public virtual Faturalar Faturalar { get; set; }
+        public virtual Invoices Faturalar { get; set; }
 
     }
 }

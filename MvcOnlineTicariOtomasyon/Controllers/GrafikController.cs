@@ -28,7 +28,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             grafikCiz.AddTitle("Kategori - Ürün Stok Sayısı").AddLegend("Stok").AddSeries("Değerler", xValue:
                 new[] { "Avize", "Koltuk", "Halı", "Masa", "Ayna", "Aksesuar", "Dolap", "Yatak", "Sandalye" },
                 yValues: new[] { 100, 100, 47, 100, 75, 50, 80, 120, 50 }).Write();
-            return File(grafikCiz.ToWebImage().GetBytes(),"image/jpeg");
+            return File(grafikCiz.ToWebImage().GetBytes(), "image/jpeg");
         }
         public ActionResult Index3()
         {
@@ -57,10 +57,10 @@ namespace MvcOnlineTicariOtomasyon.Controllers
 
         public List<Sinif1> UrunListesi()
         {
-            List<Sinif1> snf = new List<Sinif1> ();
+            List<Sinif1> snf = new List<Sinif1>();
             snf.Add(new Sinif1()
             {
-                UrunAd ="Avize",
+                UrunAd = "Avize",
                 Stok = 100
             });
             snf.Add(new Sinif1()
@@ -111,7 +111,42 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             });
             return snf;
         }
-        
-         
+
+        public ActionResult VisualizeUrunResult2()
+        {
+            return Json(UrunListesi2(), JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Index5()
+        {
+            return View();
+        }
+
+        public List<Sinif2> UrunListesi2()
+        {
+            List<Sinif2> snf = new List<Sinif2>();
+            using (var context = new Context())
+            {
+                snf = c.Uruns.Select(x => new Sinif2
+                {
+                    UrunAd = x.UrunAd,
+                    Stok = x.Stok,
+                }).ToList();
+            }
+            return snf;
+        }
+
+        public ActionResult Index6()
+        {
+            return View();
+        }
+
+        public ActionResult Index7()
+        {
+            return View();
+        }
+
+
+
     }
 }

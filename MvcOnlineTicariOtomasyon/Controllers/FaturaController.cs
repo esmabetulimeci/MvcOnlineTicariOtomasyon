@@ -24,7 +24,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         }
 
         [HttpPost]
-        public ActionResult FaturaEkle(Faturalar f)
+        public ActionResult FaturaEkle(Invoices f)
         {
             c.Faturalar.Add(f);
             c.SaveChanges();
@@ -36,7 +36,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var fatura = c.Faturalar.Find(id);
             return View("FaturaGetir",fatura);
         }
-        public ActionResult FaturaGuncelle(Faturalar f)
+        public ActionResult FaturaGuncelle(Invoices f)
         {
             var fatura = c.Faturalar.Find(f.FaturaID);
             fatura.FaturaSeriNo = f.FaturaSeriNo;

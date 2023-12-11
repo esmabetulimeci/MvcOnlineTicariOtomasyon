@@ -7,7 +7,7 @@ using System.Web;
 
 namespace MvcOnlineTicariOtomasyon.Models.Sınıflar
 {
-    public class Faturalar
+    public class Invoices
     {
 
         [Key]

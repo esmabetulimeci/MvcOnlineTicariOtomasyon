@@ -168,14 +168,16 @@
     <Compile Include="Models\Sınıflar\Departman.cs" />
     <Compile Include="Models\Sınıflar\Detay.cs" />
     <Compile Include="Models\Sınıflar\FaturaKalem.cs" />
-    <Compile Include="Models\Sınıflar\Faturalar.cs" />
+    <Compile Include="Models\Sınıflar\Invoices.cs" />
     <Compile Include="Models\Sınıflar\Gider.cs" />
     <Compile Include="Models\Sınıflar\KargoDetay.cs" />
     <Compile Include="Models\Sınıflar\KargoTakip.cs" />
     <Compile Include="Models\Sınıflar\Kategori.cs" />
+    <Compile Include="Models\Sınıflar\Message.cs" />
     <Compile Include="Models\Sınıflar\Personel.cs" />
     <Compile Include="Models\Sınıflar\SatisHareket.cs" />
     <Compile Include="Models\Sınıflar\Sinif1.cs" />
+    <Compile Include="Models\Sınıflar\Sinif2.cs" />
     <Compile Include="Models\Sınıflar\SınıfGrup.cs" />
     <Compile Include="Models\Sınıflar\SınıfGrup2.cs" />
     <Compile Include="Models\Sınıflar\SınıfGrup3.cs" />
@@ -2950,6 +2952,13 @@
     <Content Include="Views\Grafik\Index2.cshtml" />
     <Content Include="Views\Grafik\Index3.cshtml" />
     <Content Include="Views\Grafik\Index4.cshtml" />
+    <Content Include="Views\Grafik\Index5.cshtml" />
+    <Content Include="Views\Grafik\Index6.cshtml" />
+    <Content Include="Views\Grafik\Index7.cshtml" />
+    <Content Include="Views\CariPanel\GelenMesajlar.cshtml" />
+    <Content Include="Views\CariPanel\GidenMesajlar.cshtml" />
+    <Content Include="Views\CariPanel\MesajDetay.cshtml" />
+    <Content Include="Views\CariPanel\YeniMesaj.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
