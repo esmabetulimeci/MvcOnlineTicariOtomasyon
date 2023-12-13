@@ -83,6 +83,23 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             c.SaveChanges();
             return View();
         }
+
+
+        public ActionResult KargoTakip(string p)
+        {
+            var k = from x in c.KargoDetays select x;
+          
+            return View(k.ToList());
+         
+        }
+
+        public ActionResult CariKargoTakip(string id)
+        {
+            var degerler = c.kargoTakips.Where(x => x.TakipKodu == id).ToList();
+
+            return View(degerler);
+
+        }
     }
 
 }
