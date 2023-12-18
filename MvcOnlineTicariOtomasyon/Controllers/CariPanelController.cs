@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
@@ -15,8 +16,19 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult Index()
         {
             var mail = (string)Session["CariMail"];
-            var degerler = c.Carilers.FirstOrDefault(x => x.CariMail == mail);
+            var degerler = c.Carilers.Where(x => x.CariMail == mail);
             ViewBag.m = mail;
+            var mailId = c.Carilers.Where(x => x.CariMail == mail).Select(y=>y.CariID).FirstOrDefault();
+            ViewBag.mailId = mailId;
+
+            var toplamSatis = c.SatisHarekets.Where(x => x.Cariid == mailId).Count();
+            ViewBag.toplamSatis = toplamSatis;
+            var toplamTutar = c.SatisHarekets.Where(x => x.Cariid == mailId).Sum(y => y.ToplamTutar);
+            ViewBag.toplamtutar = toplamTutar;
+
+            var toplamUrunSayisi = c.SatisHarekets.Where(x => x.Cariid == mailId).Sum(y => y.Adet);
+            ViewBag.toplamurunsayisi = toplamUrunSayisi;
+
             return View(degerler);
         }
         public ActionResult Siparislerim()
@@ -88,7 +100,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         public ActionResult KargoTakip(string p)
         {
             var k = from x in c.KargoDetays select x;
-          
+            k = k.Where(y => y.TakipKodu.Contains(p));
             return View(k.ToList());
          
         }
@@ -99,6 +111,12 @@ namespace MvcOnlineTicariOtomasyon.Controllers
 
             return View(degerler);
 
+        }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index","Login");
         }
     }
 
