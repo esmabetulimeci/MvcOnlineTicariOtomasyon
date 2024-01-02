@@ -363,6 +363,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="image\sky.jpg" />
     <Content Include="MvcOnlineTicariOtomasyon\AdminLTE-3.0.4\.gitignore" />
     <Content Include="MvcOnlineTicariOtomasyon\AdminLTE-3.0.4\build\config\postcss.config.js" />
     <Content Include="MvcOnlineTicariOtomasyon\AdminLTE-3.0.4\build\config\rollup.config.js" />
@@ -2961,10 +2962,10 @@
     <Content Include="Views\CariPanel\YeniMesaj.cshtml" />
     <Content Include="Views\CariPanel\KargoTakip.cshtml" />
     <Content Include="Views\CariPanel\CariKargoTakip.cshtml" />
+    <Content Include="Views\CariPanel\Partial1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="image\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
