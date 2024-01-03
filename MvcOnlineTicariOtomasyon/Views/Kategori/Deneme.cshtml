@@ -4,18 +4,18 @@
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
 <script>
 
     $(function () {
 
-        $('#DrpSehir').change(function () {
+        $('#DrpKategori').change(function () {
 
-            var id = $('#DrpSehir').val();
+            var id = $('#DrpKategori').val();
 
             $.ajax({
 
-                url: '/Home/ilcegetir',
+                url: '/Kategori/UrunGetir',
 
                 data: { p: id },
 
@@ -27,11 +27,11 @@
 
                     console.log(data);
 
-                    $('#Drpilce').empty();
+                    $('#DrpUrun').empty();
 
                     for (var i = 0; i < data.length; i++) {
 
-                        $('#Drpilce').append("<option value='" + data[i].Value + "'>" + data[i].Text + "</Option>");
+                        $('#DrpUrun').append("<option value='" + data[i].Value + "'>" + data[i].Text + "</Option>");
 
                     }
 
@@ -55,6 +55,6 @@
     @Html.DropDownList("DrpKategori", Model.Kategoriler, "---Kategori Seçiniz---", new { @class = "form-control" })
     <br />
     @Html.Label("Urunler")
-    @Html.DropDownList("DrpKategori", Model.Urunler, "---Ürün Seçiniz---", new { @class = "form-control" })
+    @Html.DropDownList("DrpUrun", Model.Urunler, "---Ürün Seçiniz---", new { @class = "form-control" })
 </div>
 
