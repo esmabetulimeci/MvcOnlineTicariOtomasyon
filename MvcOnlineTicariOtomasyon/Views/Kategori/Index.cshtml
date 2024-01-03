@@ -29,5 +29,12 @@
     }
 
 </table>
-@Html.PagedListPager((IPagedList)Model,sayfa=>Url.Action("Index", new {sayfa}))
+@Html.PagedListPager((IPagedList)Model,sayfa=>Url.Action("Index", new {sayfa}),new PagedListRenderOptions
+{
+    LiElementClasses = new List<string>
+    {
+        "page-link"
+    }
+})
+
 <a style="width:150px;" href="/Kategori/KategoriEkle" role="button" class="btn btn-secondary btn-lg">Kategori Ekle</a>

@@ -164,6 +164,7 @@
     <Compile Include="Models\Sınıflar\Admin.cs" />
     <Compile Include="Models\Sınıflar\Cariler.cs" />
     <Compile Include="Models\Sınıflar\Class1.cs" />
+    <Compile Include="Models\Sınıflar\Class3.cs" />
     <Compile Include="Models\Sınıflar\Context.cs" />
     <Compile Include="Models\Sınıflar\Departman.cs" />
     <Compile Include="Models\Sınıflar\Detay.cs" />
@@ -363,7 +364,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="image\nightsky_c-0x600.jpg" />
+    <Content Include="image\pexels-neale-lasalle-631477.jpg" />
     <Content Include="image\sky.jpg" />
+    <Content Include="image\star.jpg" />
+    <Content Include="image\star2.jpg" />
+    <Content Include="image\star3.jpg" />
     <Content Include="MvcOnlineTicariOtomasyon\AdminLTE-3.0.4\.gitignore" />
     <Content Include="MvcOnlineTicariOtomasyon\AdminLTE-3.0.4\build\config\postcss.config.js" />
     <Content Include="MvcOnlineTicariOtomasyon\AdminLTE-3.0.4\build\config\rollup.config.js" />
@@ -2963,6 +2969,7 @@
     <Content Include="Views\CariPanel\KargoTakip.cshtml" />
     <Content Include="Views\CariPanel\CariKargoTakip.cshtml" />
     <Content Include="Views\CariPanel\Partial1.cshtml" />
+    <Content Include="Views\Kategori\Deneme.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

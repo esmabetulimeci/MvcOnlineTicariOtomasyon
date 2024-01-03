@@ -121,8 +121,7 @@ a:focus, a:hover {
 }
 body {
 	padding: 3em 0;
-	
-	background-image: url('../../../image/sky.jpg');
+	background: linear-gradient(90deg, rgba(10,33,1,1) 0%, rgba(57,149,101,1) 35%, rgba(5,36,8,1) 100%);
 	background-attachment: fixed;
 	background-size: cover;
 }
