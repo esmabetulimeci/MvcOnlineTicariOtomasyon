@@ -13,7 +13,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         Context c= new Context();
         public ActionResult Index()
         {
-            var liste = c.Faturalar.ToList();
+            var liste = c.Faturalars.ToList();
             return View(liste);
         }
 
@@ -26,19 +26,19 @@ namespace MvcOnlineTicariOtomasyon.Controllers
         [HttpPost]
         public ActionResult FaturaEkle(Invoices f)
         {
-            c.Faturalar.Add(f);
+            c.Faturalars.Add(f);
             c.SaveChanges();
             return RedirectToAction("Index");
         }
 
         public ActionResult FaturaGetir(int id)
         {
-            var fatura = c.Faturalar.Find(id);
+            var fatura = c.Faturalars.Find(id);
             return View("FaturaGetir",fatura);
         }
         public ActionResult FaturaGuncelle(Invoices f)
         {
-            var fatura = c.Faturalar.Find(f.FaturaID);
+            var fatura = c.Faturalars.Find(f.FaturaID);
             fatura.FaturaSeriNo = f.FaturaSeriNo;
             fatura.FaturSıraNo = f.FaturSıraNo;
             fatura.VergiDairesi= f.VergiDairesi;
@@ -70,6 +70,15 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             c.FaturaKalems.Add(p);
             c.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Dinamik()
+        {
+            Class4 cs = new Class4();
+            cs.deger1 = c.Faturalars.ToList();
+            cs.deger2 = c.FaturaKalems.ToList();
+            return View(cs);
+
         }
     }
 }

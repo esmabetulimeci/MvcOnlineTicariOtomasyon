@@ -14,7 +14,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Sınıflar
         public DbSet<Cariler> Carilers { get; set; }
         public DbSet<Departman> Departmans { get; set; }
         public DbSet<FaturaKalem> FaturaKalems { get; set; }
-        public DbSet<Invoices> Faturalar { get; set; }
+        public DbSet<Invoices> Faturalars { get; set; }
         public DbSet<Gider> Giders { get; set; }
         public DbSet<Kategori> Kategoris { get; set; }
         public DbSet<Personel> Personels { get; set; }
@@ -25,6 +25,8 @@ namespace MvcOnlineTicariOtomasyon.Models.Sınıflar
         public DbSet<KargoDetay> KargoDetays { get; set; }
         public DbSet<KargoTakip> kargoTakips { get; set; }
         public DbSet<Message> Messages { get; set; }
+
+    
       
 
     }
