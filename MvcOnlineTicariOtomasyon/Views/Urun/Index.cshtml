@@ -6,18 +6,20 @@
 }
 
 <br />
-<h2>Urunler</h2>
-<br />
+<h3 style="margin-left:10px;">ÜRÜNLER</h3>
+
 @using (Html.BeginForm("Index", "Urun", FormMethod.Get))
 {
-    <p>
-        Ürün Adı :@Html.TextBox("p")
-        <input type="submit" value="Ara" />
-    </p>
+    <div style="background-color: white; padding: 10px; border: 2px solid #399565; width: 350px;margin-top:10px; margin-left:10px; ">
+        <p style="margin-top:10px;">
+            Ürün Adı : @Html.TextBox("p")
+            <input type="submit" value="Ara" />
+        </p>
+    </div>
 }
 
 <br />
-<table class="table table-bordered" style="margin-top:20px; margin-left:20px;">
+<table class="table table-bordered" style="margin-top:10px; margin-left:10px; width:auto; border:solid 1px black">
     <tr>
 
         <th>Ürün</th>
@@ -51,4 +53,4 @@
     }
 </table>
 
-<a href="/Urun/UrunEkle/" class="btn btn-info">Yeni Ürün Ekle</a>
+<a style="width: 150px; margin-left: 10px; background-color: #0a2101" href="/Urun/UrunEkle/" class="btn btn-info">Yeni Ürün Ekle</a>

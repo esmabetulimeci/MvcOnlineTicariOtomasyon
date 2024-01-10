@@ -365,6 +365,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="image\27190-9-software-picture.png" />
     <Content Include="image\Innatos-Consider-the-implementing-of-an-ERP-management-system-SUBTITULO.png" />
     <Content Include="image\nightsky_c-0x600.jpg" />
     <Content Include="image\pexels-neale-lasalle-631477.jpg" />
