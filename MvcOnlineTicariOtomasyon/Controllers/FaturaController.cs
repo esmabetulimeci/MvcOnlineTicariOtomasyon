@@ -80,5 +80,33 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             return View(cs);
 
         }
+
+        public ActionResult FaturKaydet(string FaturaSeriNo, string FaturaSıraNo, DateTime Tarih, string VergiDairesi, string Saat, string TeslimEden, string TeslimAlan ,string Toplam, FaturaKalem[] kalemler)
+        {
+            Invoices f = new Invoices();
+            f.FaturaSeriNo= FaturaSeriNo;
+            f.FaturSıraNo = FaturaSıraNo;
+            f.Tarih = Tarih;
+            f.VergiDairesi = VergiDairesi;
+            f.Saat = Saat;
+            f.TeslimEden= TeslimEden;
+            f.TeslimAlan = TeslimAlan;
+            f.Toplam = decimal.Parse(Toplam);
+            c.Faturalars.Add(f);
+            foreach(var x in kalemler)
+            {
+                FaturaKalem fk = new FaturaKalem();
+                fk.Aciklama = x.Aciklama;
+                fk.BirimFiyat = x.BirimFiyat;
+                fk.Miktar=x.Miktar;
+                fk.Tutar=x.Tutar;
+                fk.FaturaKalemID= x.FaturaKalemID;
+                c.FaturaKalems.Add(fk);
+            }
+           
+            c.SaveChanges();
+            return Json("İşlem Başarılı", JsonRequestBehavior.AllowGet);
+
+        }
     }
 }
