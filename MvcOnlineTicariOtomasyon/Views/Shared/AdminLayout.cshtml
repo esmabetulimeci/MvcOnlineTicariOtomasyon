@@ -107,12 +107,7 @@
 
                         <a class="nav-link" href="/Fatura/Dinamik">
                             <div class="sb-nav-link-icon"><i class="fas  fa-procedures"></i></div>
-                           Dinamik Faturalar
-                        </a>
-
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas   fa-chevron-right"></i></div>
-                            Giderler
+                            Dinamik Faturalar
                         </a>
 
                         <a class="nav-link" href="/Kargo/Index">
@@ -133,10 +128,10 @@
                             Galeri
                         </a>
 
-                        <a class="nav-link" href="/UrunDetay/Index">
+                        @*<a class="nav-link" href="/UrunDetay/Index">
                             <div class="sb-nav-link-icon"><i class="fas  fa-university"></i></div>
                             Ürün Detay
-                        </a>
+                        </a>*@
                         <a class="nav-link" href="/Istatistik/BasitTablolar">
                             <div class="sb-nav-link-icon"><i class="fas  fa-car"></i></div>
                             Hızlı Bakış
@@ -147,7 +142,7 @@
 
             </nav>
         </div>
-       
+
         <div id="layoutSidenav_content">
             @RenderBody()
 
@@ -168,6 +163,7 @@
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
     <script src="~/MvcOnlineTicariOtomasyon/Web/dist/assets/demo/datatables-demo.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>
 

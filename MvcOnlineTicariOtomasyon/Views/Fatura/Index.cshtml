@@ -4,9 +4,11 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
-<h2>Index</h2>
-
-<table class="table table-bordered" style="margin-top:20px; margin-left:20px; ">
+<br />
+<h3 style="margin-left:10px;">FATURALAR</h3>
+<br />
+<button class="btn btn-primary" style="width: 400px; margin-left: 10px;  background-color:gray; color: white" data-toggle="modal" data-target="#Modal1" type="button">Faturaları PopUp Penceresinde Görüntüle</button>
+<table class="table table-bordered" style="margin-top:20px; margin-left:10px; width:auto; border:solid 1px black">
 
     <tr>
       
@@ -43,10 +45,11 @@
 
 </table>
 
-<a style="width:150px;" href="/Fatura/FaturaEkle" role="button" class="btn btn-primary btn-lg">Yeni Fatura Eklee</a>
+<a style="width: 200px; margin-left: 10px; background-color: #004626; color: white " href="/Fatura/FaturaEkle" role="button" class="btn btn-primary btn-lg" >Yeni Fatura Ekle</a>
 <br />
 <br />
-<button class="btn btn-primary" style="background-color:aquamarine" data-toggle="modal" data-target="#Modal1" type="button">PopUp Penceresi</button>
+
+
 
 <div class="modal" id="Modal1">
     <div class="modal-dialog">

@@ -22,210 +22,218 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition sidebar-mini">
-    <div class="wrapper">
-        <!-- Navbar -->
-       
-        <!-- /.navbar -->
-        <!-- Main Sidebar Container -->
-       
+<body >
+    
 
-        <!-- Content Wrapper. Contains page content -->
-        
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>Hızlı Bakış Tabloları</h1>
-                        </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Simple Tables</li>
-                            </ol>
-                        </div>
+
+    <br />
+    <h3>BASİT TABLOLAR</h3>
+
+        @*<section class="content-header">
+            <div class="container-fluid">
+                <div class="row>
+                    <div class="col-sm-6">
+
                     </div>
-                </div><!-- /.container-fluid -->
-            </section>
+                    <div class="col-sm-6">
 
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Kategori Tablosu</h3>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 10px">#</th>
-                                                <th>Kategori</th>
-                                                <th>Progress Bar</th>
-                                                <th style="width: 40px">Oran</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1.</td>
-                                                <td>Avize</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-danger">55%</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2.</td>
-                                                <td>Halı</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-warning">70%</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3.</td>
-                                                <td>Koltuk</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar bg-primary" style="width: 30%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-primary">30%</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4.</td>
-                                                <td>Yatak</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar bg-success" style="width: 90%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-success">90%</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- /.card-body -->
+                    </div>
+                </div>
+            </div>
+        </section>*@
 
+        <!-- Main content -->
+        <section class="content">
+            <div class="container" style="margin-top:10px;">
+                <div class="row">
+                    <div class="col-md-6" style="width:auto; justify-content:center">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Kategori Tablosu</h3>
                             </div>
-                            <!-- /.card -->
-                            <br />
-                            @Html.Action("Partial1", "Istatistik")
+                            <!-- /.card-header -->
+                            <div class="card-body p-0">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Kategori</th>
+                                            <th>Progress Bar</th>
+                                            <th style="width: 40px">Oran</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Avize</td>
+                                            <td>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-danger">55%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td>Halı</td>
+                                            <td>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-warning">70%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td>Koltuk</td>
+                                            <td>
+                                                <div class="progress progress-xs progress-striped active">
+                                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-primary">30%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.</td>
+                                            <td>Yatak</td>
+                                            <td>
+                                                <div class="progress progress-xs progress-striped active">
+                                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-success">90%</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
 
-
-
-                            <!-- /.card -->
                         </div>
-                        <!-- /.col -->
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Müşteri Şehir Tablosu</h3>
+                        <!-- /.card -->
+                        <br />
 
-                                    <div class="card-tools">
-                                        <ul class="pagination pagination-sm float-right">
-                                            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                                        </ul>
-                                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.Action("Partial1", "Istatistik")
+                    </div>
+
+
+
+
+
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Müşteri Şehir Tablosu</h3>
+
+                                <div class="card-tools">
+                                    <ul class="pagination pagination-sm float-right">
+                                        <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                                    </ul>
                                 </div>
-                                <!-- /.card-header -->
-                                <div class="card-body p-0">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 10px">#</th>
-                                                <th>Şehir</th>
-                                                <th>Progress Bar</th>
-                                                <th style="width: 40px">Adet</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @{ int sirano = 0;}
-                                            @foreach (var x in Model)
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body p-0">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Şehir</th>
+                                            <th>Progress Bar</th>
+                                            <th style="width: 40px">Adet</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{ int sirano = 0;}
+                                        @foreach (var x in Model)
                                             {
-                                                <tr>
-                                                    <td>@{sirano++;}@sirano</td>
-                                                    <td>@x.Sehir</td>
-                                                    <td>
-                                                        @if (x.Sayi == 1)
+                                        <tr>
+                                            <td>@{sirano++;}@sirano</td>
+                                            <td>@x.Sehir</td>
+                                            <td>
+                                                @if (x.Sayi == 1)
                                                         {
-                                                            <div class="progress progress-xs">
-                                                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                                            </div>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                                </div>
                                                         }
-                                                        @if (x.Sayi == 2)
+                                                @if (x.Sayi == 2)
                                                         {
-                                                            <div class="progress progress-xs">
-                                                                <div class="progress-bar bg-warning" style="width: 70%"></div>
-                                                            </div>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                                </div>
                                                         }
-                                                        @if (x.Sayi == 3)
+                                                @if (x.Sayi == 3)
                                                         {
-                                                            <div class="progress progress-xs progress-striped active">
-                                                                <div class="progress-bar bg-success" style="width: 90%"></div>
-                                                            </div>
-                                                        }
-
-                                                    </td>
-                                                    <td>
-                                                        @if (x.Sayi == 1)
-                                                        {
-                                                            <span class="badge bg-danger">@x.Sayi</span>
-                                                        }
-                                                        @if (x.Sayi == 2)
-                                                        {
-                                                            <span class="badge bg-warning">@x.Sayi</span>
+                                                <div class="progress progress-xs progress-striped active">
+                                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                                </div>
                                                         }
 
-                                                        @if (x.Sayi == 3)
+                                            </td>
+                                            <td>
+                                                @if (x.Sayi == 1)
                                                         {
-                                                            <span class="badge bg-success">@x.Sayi</span>
+                                                <span class="badge bg-danger">@x.Sayi</span>
                                                         }
-                                                    </td>
-                                                </tr>
+                                                @if (x.Sayi == 2)
+                                                        {
+                                                <span class="badge bg-warning">@x.Sayi</span>
+                                                        }
+
+                                                @if (x.Sayi == 3)
+                                                        {
+                                                <span class="badge bg-success">@x.Sayi</span>
+                                                        }
+                                            </td>
+                                        </tr>
                                             }
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- /.card-body -->
+                                    </tbody>
+                                </table>
                             </div>
-                            <!-- /.card -->
 
-                            @Html.Action("Partial4", "Istatistik")
-                            <!-- /.card -->
+
+
+                            <!-- /.card-body -->
                         </div>
-                        <!-- /.col -->
+                        <!-- /.card -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.row -->
-                    @Html.Action("Partial2", "Istatistik")
-                    <!-- /.row -->
-                    @Html.Action("Partial3", "Istatistik")
-                    <!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
-        
+                    <div class="col-md-6">
+                        @Html.Action("Partial4", "Istatistik")
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-6">
+                        @Html.Action("Partial2", "Istatistik")
+                    </div>
+                    <div class="col-md-6">
+                        @Html.Action("Partial3", "Istatistik")
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
         <!-- /.content-wrapper -->
-       
-
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
         </aside>
         <!-- /.control-sidebar -->
-    </div>
+
     <!-- ./wrapper -->
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>

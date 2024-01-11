@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
+<br />
+<h3 style="margin-left:10px;">PERSONELLER</h3>
 
-<h2>Index</h2>
-
-<table class="table table-bordered" style="margin-top:20px; margin-left:20px; ">
+<table class="table table-bordered" style="margin-top:10px; margin-left:10px; width:auto; border:solid 1px black">
 
     <tr>
         <th>ID</th>
@@ -28,7 +28,7 @@
 
 
             <td>
-                <img src="@item.PersonelGorsel" style="width:150px;" height="150px;" />
+                <img src="@item.PersonelGorsel" style="width:auto;" height="200px"/>
             </td>
 
 
@@ -42,5 +42,5 @@
 
 </table>
 
-<a style="width:150px;" href="/Personel/PersonelEkle" role="button" class="btn btn-primary btn-lg">Personel Ekle</a>
+<a style="width: 200px; margin-left: 10px; background-color: #004626"  href="/Personel/PersonelEkle" role="button" class="btn btn-primary btn-lg">Personel Ekle</a>
 

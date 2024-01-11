@@ -5,7 +5,8 @@
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 <br />
-<table id="tbl1" class="table table-bordered" style="margin-top:20px">
+<h3 style="margin-left:10px; margin-bottom:20px;">SATIŞLAR</h3>
+<table id="tbl1" class="table table-bordered" style="margin-top:20px; margin-left:10px;  border:solid 1px black">
     <thead>
         <tr>
             <th>ID</th>
@@ -31,12 +32,12 @@
             <td>@k.Fiyat</td>
             <td>@k.ToplamTutar</td>
             <td>@k.Tarih</td>
-            <td><a href="/Satis/SatisGetir/@k.SatisID" class="btn btn-warning">Güncelle</a></td>
-            <td><a href="/Satis/SatisDetay/@k.SatisID" class="btn btn-default" style="background-color:lightcoral; color:white">Detaylar</a></td>
+            <td><a href="/Satis/SatisGetir/@k.SatisID" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Satis/SatisDetay/@k.SatisID" class="btn btn-default" style="background-color:darkcyan; color:white;">Detaylar</a></td>
         </tr>
     }
 </table>
-<a href="/Satis/YeniSatis" class="btn btn-info">Yeni Satış Yap</a>
+<a style="width: 200px; margin-left: 10px; background-color: #004626; color: white"  href="/Satis/YeniSatis" class="btn btn-info">Yeni Satış Yap</a>
 
 <link href="~/Content/bootstrap.css" rel="stylesheet" />
 
@@ -52,6 +53,12 @@
 
 <script>
     $('#tbl1').dataTable({});
+
+    //$('#tbl1').css({
+    //    'width': 'auto',
+        
+    //    // Diğer stil özelliklerini ekleyebilirsiniz
+    //});
 </script>
 
 

@@ -4603,10 +4603,10 @@ input[type=button].btn-block {
   border-bottom-right-radius: 0.25rem;
 }
 .page-item.active .page-link {
-  z-index: 3;
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+    z-index: 3;
+    color: #fff;
+    background-color: gray;
+    border-color: gray;
 }
 .page-item.disabled .page-link {
   color: #6c757d;

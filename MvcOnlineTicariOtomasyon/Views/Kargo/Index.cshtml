@@ -5,16 +5,19 @@
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h2>Kargolar</h2>
+<br />
+<h3 style="margin-left:10px;">KARGO</h3>
 @using (Html.BeginForm("Index", "Kargo", FormMethod.Get))
 {
+<div style="background-color: white; padding: 20px 10px 10px 10px; border: 2px solid #399565; width: 450px;margin-top:10px; margin-left:10px; ">
     <p>
         Kargo Takip Numarası :@Html.TextBox("p")
         <input type="submit" value="Ara" />
     </p>
+</div>
 }
 
-<table class="table table-bordered" style="margin-top:20px; margin-left:20px; ">
+<table class="table table-bordered" style="margin-top:20px; margin-left:10px; width:auto; border:solid 1px black">
 
     <tr>
         <th>Personel</th>
@@ -39,4 +42,4 @@
 
 </table>
 
-<a style="width:150px;" href="/Kargo/YeniKargo" role="button" class="btn btn-primary btn-lg">Yeni Kargo Girişi</a>
+<a style="width: 250px; margin-left: 10px; background-color: #004626 " href="/Kargo/YeniKargo" role="button" class="btn btn-primary btn-lg">Yeni Kargo Girişi</a>
